@@ -9,8 +9,8 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://tender-minsky-ab4704.netlify.app",
-    method: ["GET", "POST"],
+    origin: "https://tender-minsky-ab4704.netlify.app/",
+    methods: ["GET", "POST"],
   },
 });
 
